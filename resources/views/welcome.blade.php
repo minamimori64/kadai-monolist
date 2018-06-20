@@ -9,6 +9,7 @@
                 @if (!Auth::check())
                     <a href="" class="btn btn-success btn-lg">モノリストを始める</a>
                 @endif
+                
             </div>
         </div>
     </div>

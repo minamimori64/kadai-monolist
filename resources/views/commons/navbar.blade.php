@@ -15,10 +15,10 @@
                     
                     @if (Auth::check())
                         <li>
-                            <a href="#">
+                            <a href="{{ route('items.create') }}">
                                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                                 アイテムを追加
-                              </a>
+                            </a>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -41,7 +41,7 @@
                     @else
                     
                     <li><a href="{{ route('signup.get') }}">新規登録</a></li>
-                    <li><a href="#">ログイン</a></li>
+                    <li><a href="{{ route('login') }}">ログイン</a></li>
                     @endif
                 </ul>
             </div>
