@@ -7,7 +7,7 @@
                 <h1>素敵なモノと出会う場所</h1>
                 
                 @if (!Auth::check())
-                    <a href="" class="btn btn-success btn-lg">モノリストを始める</a>
+                     <a href="{{ route('signup.get') }}" class="btn btn-success btn-lg">モノリストを始める</a>
                 @endif
                 
             </div>
